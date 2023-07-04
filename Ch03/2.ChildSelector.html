@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.ChildSelector</title>
+    <style>
+        /* ChildSelector */
+        section>h3{
+            color:aqua;
+        }
+        /*descendant*/
+        body > h3{
+            color:violet;
+        }
+
+        .txt1 > em{
+            color:aquamarine;
+        }
+        .txt2 em{
+            color:aquamarine;
+        }
+        .txt1 b{
+            color:bisque;
+        }
+        section h3{
+            background-color: firebrick;
+        }
+        
+    </style>
+</head>
+    <body>
+        <h3>2.ChildSelector</h3>
+        
+        <section>
+
+            <h3>TXT1</h3>
+
+            <p class = "txt1">
+                txt2<br>
+                txt3<br>
+                <em>
+                    txt3<br>
+                    <b>Person</b> Live
+                </em>
+            </p>
+
+            <p class = "txt2">
+                txt4<br>
+                txt5<br>
+                <em>
+                    txt6<br>
+                    <b>Person</b> Live
+                </em>
+            </p>
+
+        </section>
+
+    </body>
+</html>
