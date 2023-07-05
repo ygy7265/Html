@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Font</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fasthand&family=Nanum+Gothic&display=swap');
+
+
+        .box1 > p:nth-child(1){font-size:16px;}
+        .box1 > p:nth-child(2){font-size:32px;}
+        .box1 > p:nth-child(3){font-size:100%;}
+        .box1 > p:nth-child(4){font-size:200%;}
+        .box1 > p:nth-child(5){font-size:2em;}
+
+        .box2 > p{font-size:32px;}
+        .box2 > p:nth-child(1){font-family: '궁서체';}
+        .box2 > p:nth-child(2){font-family: '돋움체';}
+        .box2 > p:nth-child(3){font-family: '휴먼옛체';}
+        .box2 > p:nth-child(4){font-family: 'Nanum Gothic',sans-serif;}
+        .box2 > p:nth-child(4){font-family: 'Anton',sans-serif;}
+
+        .box3 > p:nth-child(1){font-weight:100;}
+        .box3 > p:nth-child(2){font-weight:200;}
+        .box3 > p:nth-child(3){font-weight:400;}
+        .box3 > p:nth-child(4){font-weight:bold;}
+        .box3 > p:nth-child(5){font-weight:bolder;}
+
+        .box4 > p:nth-child(1){font: normal 16px '돋움';}
+        .box4 > p:nth-child(2){font: bold 32px 'Anton';}
+        .box4 > p:nth-child(3){font: bold 16px 'Nanum Gothic';}
+        .box4 > p:nth-child(4){font: normal 16px '궁서체';}
+        .box4 > p:nth-child(5){font: normal 16px '맑은고딕';}
+        .box > p{
+            line-height:20px;
+            letter-spacing: 10px;
+
+        }
+        .box5>div{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            box-sizing: border-box;
+            text-align:center;
+            /*텍스트가 위치한 공간높이로 line-height 를 지정하면 수직 가운데 정렬*/
+            line-height:200px;
+        }
+    </style>
+</head>
+<body>
+    <h3>4.Font</h3>
+    <h4>font-size</h4>
+    <div class="box1">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+    </div>
+    <h4>font-family</h4>
+    <div class="box2">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+    </div>
+    <h4>font-weight</h4>
+    <div class="box3">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+    </div>
+    <h4>font</h4>
+    <div class="box4">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+    </div>
+    <h4>line-height</h4>
+    <div class="box5">
+        <p>
+            txt1<br>
+            txt2<br>
+            txt3<br>
+            txt4
+        </p>
+
+        <div>
+            Hello World
+        </div>
+
+    </div>
+</body>
+</html>

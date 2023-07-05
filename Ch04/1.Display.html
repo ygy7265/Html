@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <!--
+        display:none 
+        -태그요소를 브라우저 화면에서 제거(공간포함)
+        -visibility:hidden 은 자리공간남음
+        display:block
+        -태그요소를 block형식으로 변환
+        -세로방향 배치,width/heigh 적용
+
+        display:inline
+        -태그요소를 inline형식으로 변환
+        -가로방향 배치,width/height 적용안됨
+        display:inlin-block
+    -->
+    <style>
+    div > span{background-color: orange;}
+    div > div{ background-color: green;}
+
+    .box1 > span:first-child{display:none;}
+    .box1 > span:nth-child(2){visibility: hidden;}
+
+
+    /*인라인태그는 dirplay 를 block를 적용해줌으로써 변경가능*/
+    .box2 > span:nth-child(2){
+        width : 100px; 
+        height: 100px;
+        display: block;
+    }
+    .box3 > div{
+        display:inline;
+        width: 100px;
+        height: 100px;
+    }
+
+    .box4 > div{
+        width:100px;
+        display: inline-block;
+        height:100px;
+    }
+    </style>
+</head>
+<body>
+    <h3>1.Display</h3>
+    <h4>1.display:none</h4>
+    <div class = "box1">
+        <span>txt1</span>
+        <span>txt2</span>
+        <span>txt3</span>
+    </div>
+    <h4>2.display:none</h4>
+    <div class = "box2">
+        <span>txt1</span>
+        <span>txt2</span>
+        <span>txt3</span>
+    </div>
+    <h4>3.display:none</h4>
+    <div class = "box3">
+        <span>txt1</span>
+        <div>txt2</div>
+        <span>txt3</span>
+    </div>
+    <h4>4.display:none</h4>
+    <div class = "box4">
+        <span>txt1</span>
+        <div>txt2</div>
+        <span>txt3</span>
+    </div>
+</body>
+</html>

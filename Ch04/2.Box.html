@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.BoxAttibute</title>
+    <!-- 
+        width,height 
+        -blook,inline-block 태그의 가로,세로크기 지정
+        -px, %  단위 사용
+        margin,padding
+        -margin 바깥쪽 여백
+        -padding 은 안쪽여백
+        border
+        - 태그의 테두리지정
+        -border: '크기 모양 색' 순서로 지정
+
+        box-sizing
+        - pading,border 속성에서 고정된 widthm height 지정
+        - padding,border와 함께 사용
+    -->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            display: inline-block;
+        }
+        section:nth-of-type(1) > div:nth-child(1){
+            width: 50px;
+            height: 50px;
+        }
+        section:nth-of-type(1) > div:nth-child(2){
+            width: 10%;
+            height: 100px;
+        }
+        section:nth-of-type(1) > div:nth-child(3){
+            width:50%;
+            height: 100px;
+        }
+        section:nth-of-type(2) > div:nth-child(1){
+            padding:10px;
+            margin: 10px;
+        }
+        section:nth-of-type(2) > div:nth-child(2){padding :10px 20px; margin:10px 20px;}
+        section:nth-of-type(2) > div:nth-child(3){padding: 10px 20px 30px; margin:10px 20px 30px;}
+        section:nth-of-type(2) > div:nth-child(4){padding: 10px 20px 30px 40px;margin:10px 20px 30 px 40}
+        section:nth-of-type(2) > div:nth-child(5){
+            padding-top:10; padding-right:20px; padding-bottom: 30px; padding-left: 40px;
+            margin-top: 10px;margin-right: 20px;margin-bottom: 30px;margin-left: 40px;
+        }
+        /*가운데 정렬 auto*/
+        section:nth-of-type(2) > div:nth-child(6){display: block; margin:10px auto;}
+        section:nth-of-type(3) > div:nth-child(1){border-width: 1px; border-style: solid; border-color:black}
+        section:nth-of-type(3) > div:nth-child(2){border: 1px solid black}
+        section:nth-of-type(3) > div:nth-child(3){border: 2px solid red}
+        /*sizing 박스크기 고정*/
+        section:nth-of-type(4) > div:nth-child(1){padding: 12px;box-sizing:border-box;}
+        section:nth-of-type(4) > div:nth-child(2){border:2px solid black;}
+        section:nth-of-type(4) > div:nth-child(3){padding: 6px; border:1px solid black;}
+
+    </style>
+</head>
+<body>
+    
+    <h3>2.BoxAttibute</h3>
+    <h4>width,padding</h4>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    <h4>margin,padding</h4>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+    <h4>border</h4>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    <h4>box-sizing</h4>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+</html>
