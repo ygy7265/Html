@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <article>
+        <h4>1.TEST</h4>
+        <style>
+            div{
+                
+                position: relative;
+                width: 308px;
+                height: 300px;
+                border: 1px dashed black;
+            }
+            article{display: inline-block;}
+            
+            .box1 > div {
+                width: 200px;
+                right:0;
+                top:0;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }
+            .box2 > div {
+                width: 200px;
+                bottom:0;
+                right:0;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }   
+            .box3 > div {
+                width: 200px;
+                top:0;
+                right:0;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }
+            .box3 > div:nth-child(2){
+                width: 100px;
+                top:100px;
+                right:0;
+                height: 100px;
+                border: 1px solid black;
+                background: blue;
+                position: absolute;
+            }
+            .box4 > div {
+                width: 200px;
+                bottom:0;
+                left:0;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }
+            .box4 > div:nth-child(2){
+                width: 100px;
+                bottom:0;
+                right:0;
+                height: 100px;
+                border: 1px solid black;
+                background: blue;
+                position: absolute;
+            }
+            .box5 > div {
+                width: 200px;
+                top:0;
+                left:50px;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }
+            .box5 > div:nth-child(2){
+                width: 100px;
+                top:50px;
+                left:100px;
+                height: 100px;
+                border: 1px solid black;
+                background: blue;
+                position: absolute;
+            }
+            .box6 > div {
+                width: 200px;
+                top:50px;
+                left:50px;
+                height: 200px;
+                border: 1px solid black;
+                background: green;
+                position: absolute;
+            }
+            .box6 > div:nth-child(2){
+                width: 100px;
+                top:100px;
+                left:100px;
+                height: 100px;
+                border: 1px solid black;
+                background: blue;
+                position: absolute;
+            }
+
+            .box7 > div:nth-child(1){
+                width: 100px;
+                top:100px;
+                right:0;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+            .box7 > div:nth-child(2){
+                width: 100px;
+                top: 100px;
+                left:0;
+                height: 100px;
+                background: green;
+                position: absolute;
+            }
+            .box7 > div:nth-child(3){
+                width: 100px;
+                top:0;
+                left:100px;
+                height: 100px;
+                background: red;
+                position: absolute;
+            }
+            .box7 > div:nth-child(4){
+                width: 100px;
+                left:100px;
+                bottom:0px;
+                height: 100px;
+                background: orange;
+                position: absolute;
+            }
+            
+            .box8 > div:nth-child(1){
+                width: 100px;
+                bottom:0;
+                right:0;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+            .box8 > div:nth-child(2){
+                width: 100px;
+                top: 0;
+                left:0;
+                height: 100px;
+                background: red;
+                position: absolute;
+            }
+            .box8 > div:nth-child(3){
+                width: 100px;
+                top:0;
+                right:0;
+                height: 100px;
+                background: green;
+                position: absolute;
+            }
+            .box8 > div:nth-child(4){
+                width: 100px;
+                left:100px;
+                bottom:100px;
+                height: 100px;
+                background: orange;
+                position: absolute;
+            }
+            .box8 > div:nth-child(5){
+                width: 100px;
+                left:0;
+                bottom:0px;
+                height: 100px;
+                background: pink;
+                position: absolute;
+            }
+            .box9 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background: red;
+                float: left;
+            }
+            .box9 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background: green;
+                float: left;
+            }
+            .box9 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background: blue;
+                float: left;
+            }
+            .box9 > div:nth-child(3){clear: both;}
+            .box10 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background: red;
+                float: right;
+            }
+            .box10 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background: green;
+                float: right;
+            }
+            .box10 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background: blue;
+                float: right;
+            }
+            .box10 > div:nth-child(3){clear: both;}
+
+            .box11 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background: red;
+                
+            }
+            .box11 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background: green;
+                
+            }
+            .box11 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background: blue;
+                
+            }
+            .box11 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+                background: orange;     
+            }
+            .box11 > div:nth-child(5){
+                width: 100px;
+                height: 100px;
+                background: pink;       
+            }
+            .box11 > div:nth-child(6){
+                width: 100px;
+                height: 100px;
+                background: teal;
+            }
+            .box11 > div{float: left;}
+            .box11 > div:nth-child(4){clear: both;}
+            .box11 > div:nth-child(6){clear: both;}
+
+            .box12 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background: red;
+                
+            }
+            .box12 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background: green;
+                
+            }
+            .box12 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background: blue;
+                
+            }
+            .box12 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+                background: orange;     
+            }
+            .box12 > div:nth-child(5){
+                width: 100px;
+                height: 100px;
+                background: pink;       
+            }
+            .box12 > div:nth-child(6){
+                width: 100px;
+                height: 100px;
+                background: teal;
+            }
+            .box12 > div{float: right;}
+            
+            .box12 > div:nth-child(2){clear: both;}
+            .box12 > div:nth-child(4){clear: both;}
+            
+        
+            
+        </style>
+        <div class="box1">
+            <div></div>
+
+        </div>
+    </article>
+    <article>
+        <h4>2.TEST</h4>
+        <style></style>
+        <div class="box2">
+            <div></div>
+
+        </div>
+    </article>
+    <article>
+        <h4>3.TEST</h4>
+        <style></style>
+        <div class="box3">
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>4.TEST</h4>
+        <style></style>
+        <div class="box4">
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>5.TEST</h4>
+        <style></style>
+        <div class="box5">
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>6.TEST</h4>
+        <style></style>
+        <div class="box6">
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>7.TEST</h4>
+        <style></style>
+        <div class="box7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>8.TEST</h4>
+        <style></style>
+        <div class="box8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>9.TEST</h4>
+        <style></style>
+        <div class="box9">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+    </article>
+    <article>
+        <h4>10.TEST</h4>
+        <style></style>
+        <div class="box10">
+            <div></div>
+            <div></div>
+            <div></div>
+            
+        </div>
+    </article>
+    <article>
+        <h4>11.TEST</h4>
+        <style></style>
+        <div class="box11">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>12.TEST</h4>
+        <style></style>
+        <div class="box12">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+</body>
+</html>
