@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mata charset="UTF-8">
+            <title>Dream JeJu</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+                *{margin: 0; padding: 0;}
+                ul,ol{list-style:none;}
+                a{text-decoration: none; color: #111;}
+
+                #container{
+                    width: 1200px;
+                    height: auto;
+                    margin: 0 auto;
+                }
+                header{
+                    width: 100%;
+                    height: 100px;
+                    background: red;
+                }
+                main{
+                    width: 100%;
+                    height: auto;
+
+                    
+                }
+                footer{
+                    width: 100%;
+                    height: 100px;
+                    
+                }
+                #slideShow{
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                }
+                #contents{
+                    width: 100%;
+                    height: auto;         
+                    overflow: hidden;
+                }
+                #tabMenu{
+                    float: left;
+                    width: 600px;
+                    height: 300px;
+                    box-sizing: border-box;
+                    padding-top: 20px;
+                }
+                #tabMenu > label{
+                    display: inline-block;
+                    padding: 15px 25px;
+                    border: 1px solid #ddd;
+                    background: #eee;
+                    color: #aaa;
+                    
+                }
+     
+                #links{
+                    float: left;
+                    width: 600px;
+                    height: 300px;
+                    box-sizing: border-box;
+                }
+                header >.logo{
+                    float: left;
+                    font-family: 'Merienda', cursive;                  
+                    font-size: 20px;
+                    margin: 16px;
+                    color: black; 
+                    text-shadow: 0 -5px 0 white;
+                }
+                header > nav{
+                    width: 900px;
+                    height: 100px;                                        
+                    float: right;
+                    position: relative;
+                }
+                header > nav > ul{
+                position: absolute;  
+                left: 0;
+                bottom: 0;
+                }
+                header > nav > ul > li{
+                    float: left;
+                    width: 200px;
+                    height: 60px;                    
+                    box-sizing: border-box;
+                    font-family: 'Merienda', cursive;    
+                    color: black;   
+                    text-shadow: 0 -2px 0 white;
+                }
+                header > nav > ul > li >a > span{
+                    margin-left: 10px;
+                }
+
+                header > nav > ul > li > ul{
+                    display: none;
+                }
+                header > nav > ul > li > a{                   
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 60px;
+                    color: black;
+                    font-size: bold;
+                    font-family: 'Gasoek One', sans-serif;
+
+                }
+                header > nav > ul > li > a:hover{
+                    color: orange;
+                }
+
+                #slideShow > section{
+                    width: 100%;
+                    height: 100%;                    
+                    box-sizing: border-box;
+                    /*overflow: hidden;*/
+                    position: relative;
+                    overflow: hidden
+                }
+                #slideShow > section > img{                    
+                    position: absolute;
+                }
+                #slideShow > section > img:nth-child(1){left: 0; top: 0;}
+                #slideShow > section > img:nth-child(2){left: 100%; top: 0;}
+                #slideShow > section > img:nth-child(3){left: 200%; top: 0;}
+                #slideShow > button{
+                    padding: 20px;
+                    height: 100%;
+                    position: absolute;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 40px;                    
+                }
+                #slideShow > button.left{
+                    left: 0; top: 0;
+                }
+                #slideShow > button.right{
+                    right: 0; top: 0;
+                }
+                #slideShow > button:hover{
+                    background-color: orange;
+                    /*0~1까지 투명도 설정*/
+                    opacity: 0.5;
+                    cursor: pointer;
+                    color: white;
+                }
+               #slideShow img{
+                    width: 100%;
+                    height: 100%;
+                }
+                #tabMenu > label > input:checked{
+                 
+                    background: red;
+                }
+                
+                #tabMenu > section{
+                    width: 100%;
+                    height: 246px;
+                    position: relative;
+                    border-top: 1px solid #ddd;                    
+                }
+                #tabMenu > section > article{
+                    position: absolute;
+                    display: none;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                #tabMenu > section > article.on{display: block;}
+                #tabMenu > section  ul{
+                    list-style-type: disc;
+                    margin-left: 36px;
+                    margin-top: 36px;
+
+
+                }
+                #tabMenu > section  ul > li{
+                    
+                    margin-bottom: 26px;
+                }
+                #tabMenu > section  ul a{
+                    font-size: 16px;
+                    
+                }
+                #tabMenu > section  ol{}
+                #tabMenu > section  ol > li{}
+                #tabMenu > section  ol a{}
+                #tabMenu > section  ol img{}
+
+            </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                
+                    <a href="./index.html" class="logo">
+                        <h1>Dream Jeju</h1>
+                    </a>
+                    <nav>
+                       <ul>
+                            <li><a href="#">단체여행<span>▼</span></a>
+                                <ul>
+                                    <li><a href="#">회사연수</a></li>
+                                    <li><a href="#">수학여행</a></li>
+                                </ul>
+                           </li>
+
+                            <li><a href="#">맞춤여행<span>▼</span></a>    
+                                <ul>                   
+                                <li><a href="#">4.3평화 기행</a></li>
+                                <li><a href="#">곶자왈 체험</a></li>
+                                <li><a href="#">힐링 워크숍</a></li>
+                              </ul>
+                            </li>
+                       
+                            <li><a href="#">갤러리</a></li>                                           
+                            <li><a href="#">문의하기</a></li>
+                        </ul>  
+                    </nav>
+                
+            </header>
+            <main>
+                <div id ="slideShow">
+                    <section>
+                    <img src="./images/img-1.jpg" alt="유체꽃" class="sildes">
+                    <img src="./images/photo-2.jpg" alt="제주바다" class="sildes">
+                    <img src="./images/photo-3.jpg" alt="돌담벼락" class="sildes">
+                    </section>
+                    <button class="left">☜</button>
+                    <button class="right">☞</button>
+                </div>
+                <div id ="contents">
+                    <div id = "tabMenu">
+                        <label><input type="radio" name="tabs" id="tab1" checked="checked">공지사항</label>
+                        <label><input type="radio" name="tabs" id="tab2">갤러리</label>
+                        
+                        <section>
+                            <article class="on">
+                                <ul>
+                                    <li><a href="#">사무실을 이전했습니다</a></li>
+                                    <li><a href="#">[참가모집] 카약체험에 초대합니다.</a></li>
+                                    <li><a href="#">[참가모집] 여름 방학기간, 오름 체험단을 모집합니다.</a></li>
+                                    <li><a href="#">겨울, 추천여행지</a></li>
+                                    <li><a href="#">가을, 추천여행지</a></li>
+                                </ul>
+                            </article>
+                            <article>
+                                <ol>
+                                    <li><a href="#"><img src="./images/img-1.jpg" alt="꽃"></a></li>
+                                    <li><a href="#"><img src="./images/img-2.jpg" alt="고양이"></a></li>
+                                    <li><a href="#"><img src="./images/img-3.jpg"></a></li>
+                                    <li><a href="#"><img src="./images/img-1.jpg"></a></li>
+                                    <li><a href="#"><img src="./images/img-2.jpg"></a></li>
+                                    <li><a href="#"><img src="./images/img-3.jpg"></a></li>
+                                </ol>
+                            </article>
+                        </section>
+                    </div>
+                    <div id = "links"></div>
+                </div>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+    <foorter></foorter>
+</html>
